@@ -51,15 +51,12 @@ class Calculator extends Module
 
         return parent::install() &&
             $this->registerHook('header') &&
-            $this->registerHook('backOfficeHeader') &&
+            $this->registerHook('displayBackOfficeHeader') &&
             $this->registerHook('displayBackOfficeCategory') &&
             $this->registerHook('actionCategoryUpdate') &&
-            $this->registerHook('displayProductActions') &&
-            $this->registerHook('displayOverrideTemplate') &&
             $this->registerHook('displayProductAdditionalInfo') &&
-            $this->registerHook('displayProductPriceBlock') &&
-            $this->registerHook('actionFrontControllerSetVariables'); /* &&
-            $this->registerHook('displayFooterProduct');*/
+            $this->registerHook('displayFooterProduct') &&
+            $this->registerHook('actionFrontControllerSetVariables');
     }
 
     public function uninstall()
@@ -145,7 +142,7 @@ class Calculator extends Module
         }
     }
 
-    public function hookBackOfficeHeader()
+    public function hookDisplayBackOfficeHeader()
     {
         if (Tools::getValue('module_name') == $this->name) {
             $this->context->controller->addJS($this->_path.'views/js/back.js');
@@ -235,10 +232,10 @@ class Calculator extends Module
         $this->saveCategoryFormFromPost();
     }
 
-    /*public function hookDisplayProductActions()
+    public function hookDisplayFooterProduct()
     {
-        $this->hookDisplayFooterProduct();
-    }*/
+        return $this->hookDisplayProductAdditionalInfo();
+    }
 
     public function hookDisplayBackOfficeCategory()
     {
