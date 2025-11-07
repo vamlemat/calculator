@@ -1,0 +1,340 @@
+.unit-price {
+  font-size: 14px;
+  color: #111;
+}
+
+#unit_price_display {
+  font-size: 22px;
+  color: #111;
+}
+
+#calculator {
+  text-align: center;
+}
+
+.calculator-container {
+  background-color: #000000;
+  padding: 20px 10px;
+  margin: 0 0 0.5rem 0;
+}
+
+.calculator-footer {
+  margin: 0;
+}
+
+#calculator .unit-entry label {
+  padding-right: 10px;
+  display: inline-block;
+}
+
+#calculator .unit-entry select,
+#calculator .unit-entry input[type="text"],
+#blockcart-modal.accessory-modal input {
+  line-height: 30px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+#calculator .unit-entry select,
+#calculator .unit-entry input[type="text"] {
+  width: 70px;
+  padding: 5px;
+  min-width: 70px;
+  text-align: right;
+  height: 30px;
+}
+
+.accessory-item input[type="number"]::-webkit-inner-spin-button,
+.accessory-item input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+#blockcart-modal.accessory-modal input {
+  text-align: center;
+  min-width: 40px;
+  width: 6.5%;
+  padding: 0.1rem 0;
+  margin: 0 0.2rem;
+  display: inline-block;
+}
+
+#blockcart-modal.accessory-modal .close {
+  position: relative;
+  right: unset;
+  top: unset;
+}
+
+#blockcart-modal.accessory-modal .close {
+  background: unset !important;
+  color: grey !important;
+}
+
+.accessory-item button,
+.accessory-item .btn {
+  background-color: #ffcc01;
+  line-height: 30px;
+  border-radius: 4px;
+  border-color: transparent;
+  color: black;
+  padding: 0.1rem 1rem;
+}
+
+#blockcart-modal.accessory-modal .modal-header .btn {
+  float: right;
+}
+
+.accessory-item button:hover {
+  color: white;
+  background: #444;
+}
+
+#blockcart-modal.accessory-modal .accesories-header h3 {
+  background-color: #e7e7e7;
+  border-radius: 0.5rem;
+  padding: 0.25rem 1rem;
+  font-weight: 400;
+}
+
+#blockcart-modal.accessory-modal .accesories-footer {
+  text-align: center;
+}
+
+#blockcart-modal.accessory-modal .btn i {
+  font-size: 1rem;
+}
+
+#blockcart-modal.accessory-modal .btn-primary:active {
+  color: #fff;
+  background-color: #444;
+}
+
+#blockcart-modal.accessory-modal [itemprop*="price"] {
+  color: #808080;
+}
+
+#blockcart-modal.accessory-modal .product-quantity .add {
+  display: flex;
+  justify-content: center;
+}
+
+#blockcart-modal.accessory-modal .accessory-price {
+  text-align: center;
+  color: inherit !important;
+}
+
+#blockcart-modal.accessory-modal .accessory-title {
+  margin: 0.1rem;
+  display: inline-block;
+  background: #000;
+  color: #fff;
+}
+
+.accessory-item {
+  margin: 2rem 1rem;
+}
+
+#blockcart-modal.accessory-modal .accessory-image {
+  width: 100%;
+}
+
+#calculator #calculator-price {
+  width: 100%;
+  padding-top: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#calculator #calculator-area-price {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+#calculator input.error,
+#calculator select.error {
+  border: 2px solid #aa0000;
+  color: #aa0000;
+  outline: none;
+}
+
+#calculator .unit-entry {
+  position: relative;
+  clear: both;
+}
+
+#calculator .error-unit {
+  display: inline-block;
+  background-color: #bf400d;
+  color: #fff;
+  padding: 3px 4px;
+  border-radius: 4px;
+  position: absolute;
+  left: 90%;
+  top: 0;
+  white-space: nowrap;
+  z-index: 100;
+}
+
+#calculator.error #calculator-message {
+  color: #bf400d;
+}
+
+#calculator.error,
+#calculator.error #calculator-user-input,
+#calculator .is-invalid {
+  border-color: #bf400d !important;
+}
+
+.d-none {
+  display: none;
+}
+
+/* Accesorios relacionados */
+.summary h3 a {
+  color: #484848;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 64em) and (min-width: 40.063em) {
+  .accessoryGroup .productImage,
+  .accessoryTabGroup .productImage {
+    width: initial;
+    padding: 0.5rem;
+  }
+}
+
+.accessory-item {
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.accessory-item .price {
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+/* bootstrap spinner */
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.2em;
+}
+
+.spinner-border {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border 0.75s linear infinite;
+  animation: spinner-border 0.75s linear infinite;
+}
+
+.accessory-item {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0.5rem 0;
+}
+
+.accessory-item .summary {
+  margin-bottom: 5px !important;
+}
+
+.row .row.collapse {
+  margin: 0;
+  max-width: none;
+  width: auto;
+}
+
+.row .row.collapse::after {
+  clear: both;
+}
+.row .row.collapse::before,
+.row .row.collapse::after {
+  content: " ";
+  display: table;
+}
+
+.row .row::after {
+  clear: both;
+}
+.row .row::before,
+.row .row::after {
+  content: " ";
+  display: table;
+}
+.row::after {
+  clear: both;
+}
+.row::before,
+.row::after {
+  content: " ";
+  display: table;
+}
+
+.row.collapse > .column,
+.row.collapse > .columns {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.accessory-item .OptionQty .label {
+  display: inline-block;
+  width: 65px;
+  text-align: right;
+}
+
+.accessory-item .add-to-cart .suscess,
+.accessory-item .add-to-cart .spinner-border {
+  display: none !important;
+}
+
+.accessory-item .add-to-cart.loading .spinner-border {
+  display: inline-block !important;
+}
+
+.accessory-item .add-to-cart.loading .shopping-cart {
+  display: none;
+}
+
+.accessory-item .add-to-cart.suscess .shopping-cart {
+  display: none;
+}
+
+.accessory-item .add-to-cart.suscess .suscess {
+  display: inline-block !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.accessory-category {
+    border-bottom: 1px solid #efefef;
+    margin-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.accessory-category .col-xs-2,
+.accessory-category .col-xs-7
+{
+    padding: 10px 27px;
+}
