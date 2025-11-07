@@ -54,12 +54,8 @@ class Calculator extends Module
             $this->registerHook('displayBackOfficeHeader') &&
             $this->registerHook('displayBackOfficeCategory') &&
             $this->registerHook('actionCategoryUpdate') &&
-            $this->registerHook('displayProductActions') &&
-            $this->registerHook('displayOverrideTemplate') &&
             $this->registerHook('displayProductAdditionalInfo') &&
-            $this->registerHook('displayProductPriceBlock') &&
-            $this->registerHook('actionFrontControllerSetVariables'); /* &&
-            $this->registerHook('displayFooterProduct');*/
+            $this->registerHook('actionFrontControllerSetVariables');
     }
 
     public function uninstall()
