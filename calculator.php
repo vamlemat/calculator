@@ -55,6 +55,7 @@ class Calculator extends Module
             $this->registerHook('displayBackOfficeCategory') &&
             $this->registerHook('actionCategoryUpdate') &&
             $this->registerHook('displayProductAdditionalInfo') &&
+            $this->registerHook('displayFooterProduct') &&
             $this->registerHook('actionFrontControllerSetVariables');
     }
 
@@ -231,10 +232,10 @@ class Calculator extends Module
         $this->saveCategoryFormFromPost();
     }
 
-    /*public function hookDisplayProductActions()
+    public function hookDisplayFooterProduct()
     {
-        $this->hookDisplayFooterProduct();
-    }*/
+        return $this->hookDisplayProductAdditionalInfo();
+    }
 
     public function hookDisplayBackOfficeCategory()
     {
