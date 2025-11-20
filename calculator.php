@@ -30,7 +30,7 @@ class Calculator extends Module
     {
         $this->name = 'calculator';
         $this->tab = 'administration';
-        $this->version = '1.0.0';
+        $this->version = '1.1.0';
         $this->author = '8PECADOS';
         $this->need_instance = 0;
         $this->objectPresenter = new ObjectPresenter();
@@ -42,7 +42,7 @@ class Calculator extends Module
         $this->displayName = $this->l('Calculadora de precio');
         $this->description = $this->l('AÃ±ade una calculadora en los detalles del producto, se puede configurar por categorÃ­a');
 
-        $this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
+        $this->ps_versions_compliancy = array('min' => '1.8.2', 'max' => _PS_VERSION_);
     }
 
     public function install()
