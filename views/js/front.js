@@ -17,6 +17,14 @@
     catch (_) {}
   }
 
+  // Formatear números al estilo español (coma decimal, punto miles)
+  function formatNumber(num, decimals = 2) {
+    if (!Number.isFinite(num)) return '0,00';
+    const parts = num.toFixed(decimals).split('.');
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    return parts.join(',');
+  }
+
   function initCalculators() {
     $('.calculator').each(function () {
       const $wrap = $(this);
@@ -129,7 +137,7 @@
 
 
       const packages = this.totalPackages;
-      const totalTxt = this.totalPrice(packages).toFixed(2);
+      const totalTxt = formatNumber(this.totalPrice(packages));
 
       // 👇 Fijamos la cantidad, SIN .trigger('input/change') para evitar parpadeo
       this.$qtyInput.val(packages);
@@ -178,11 +186,11 @@
       return (Number.isFinite(this.packagePrice) ? this.packagePrice : 0) * packages;
     }
     renderPackagingCount(packages) {
-      return `${packages} paquete(s) = ${this.totalMeters.toFixed(2)}${this.unit}`;
+      return `${packages} paquete(s) = ${formatNumber(this.totalMeters)}${this.unit}`;
     }
     renderPriceMessage(totalPrice) {
       return `
-        <div id="calculator-area-price">${(Number(this.packagePrice)||0).toFixed(2)}€ / Paquete</div>
+        <div id="calculator-area-price">${formatNumber(Number(this.packagePrice)||0)}€ / Paquete</div>
         <div id="calculator-price">(${totalPrice}€ / total)</div>
       `;
     }
