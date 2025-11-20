@@ -1,0 +1,26 @@
+# 📁 Archivos del Módulo Parquet Prices Display
+# Para subir a: https://github.com/vamlemat/parquet-prices-display
+
+## Estos son los archivos que necesitas crear en GitHub:
+
+1. parquetprices.php
+2. config.xml
+3. README.md
+4. .gitignore
+5. index.php
+6. logo.png (archivo binario - subir aparte)
+7. views/css/front.css
+8. views/js/front.js
+9. views/templates/hook/unit-price-main.tpl
+10. views/templates/hook/package-price-secondary.tpl
+11. translations/es.php
+12. sql/index.php (vacío)
+13. + varios index.php de seguridad en cada carpeta
+
+## 💡 Forma más rápida:
+
+Opción A: Descarga el ZIP si puedes ver archivos en Cursor
+Opción B: Te doy el contenido de cada archivo para copiar/pegar
+Opción C: Te ayudo a crear un script que lo suba automáticamente
+
+¿Cuál prefieres?
