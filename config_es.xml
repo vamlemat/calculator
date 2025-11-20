@@ -2,7 +2,7 @@
 <module>
     <name>calculator</name>
     <displayName><![CDATA[Calculadora de precio]]></displayName>
-    <version><![CDATA[1.1.0]]></version>
+    <version><![CDATA[1.2.0]]></version>
     <description><![CDATA[A&Atilde;&plusmn;ade una calculadora en los detalles del producto, se puede configurar por categor&Atilde;&shy;a]]></description>
     <author><![CDATA[ATECH]]></author>
     <tab><![CDATA[administration]]></tab>

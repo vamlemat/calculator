@@ -30,7 +30,7 @@ class Calculator extends Module
     {
         $this->name = 'calculator';
         $this->tab = 'administration';
-        $this->version = '1.1.0';
+        $this->version = '1.2.0';
         $this->author = 'ATECH';
         $this->need_instance = 0;
         $this->objectPresenter = new ObjectPresenter();
